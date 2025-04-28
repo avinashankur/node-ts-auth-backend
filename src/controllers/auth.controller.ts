@@ -1,9 +1,9 @@
 import { Request, Response, CookieOptions } from 'express';
 import jwt, { JwtPayload } from 'jsonwebtoken';
-import User from '@/models/user.model';
-import asyncHandler from '@/utils/helpers/AsyncHandler';
-import ApiError from '@/utils/helpers/ApiErrors';
-import ApiResponse from '@/utils/helpers/ApiResponse';
+import User from '../models/user.model';
+import asyncHandler from '../utils/helpers/AsyncHandler';
+import ApiError from '../utils/helpers/ApiErrors';
+import ApiResponse from '../utils/helpers/ApiResponse';
 
 interface JwtPayloadWithId extends JwtPayload {
   _id: string;

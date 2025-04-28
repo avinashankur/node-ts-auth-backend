@@ -1,8 +1,8 @@
 import mongoose, { Schema, Model } from 'mongoose';
-import { IUser } from '@/types';
+import { IUser } from '../types';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import { getEnvVariable } from '@/utils/helpers/getEnvVariable';
+import { getEnvVariable } from '../utils/helpers/getEnvVariable';
 
 const userSchema: Schema<IUser> = new mongoose.Schema(
   {

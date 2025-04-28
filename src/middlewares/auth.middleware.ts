@@ -1,11 +1,11 @@
 // auth.middleware.ts
 
-import ApiError from '@/utils/helpers/ApiErrors';
-import asyncHandler from '@/utils/helpers/AsyncHandler';
+import ApiError from '../utils/helpers/ApiErrors';
+import asyncHandler from '../utils/helpers/AsyncHandler';
 import { NextFunction, Response, Request, RequestHandler } from 'express';
 import jwt, { JwtPayload } from 'jsonwebtoken';
-import User from '@/models/user.model';
-import { IUser } from '@/types';
+import User from '../models/user.model';
+import { IUser } from '../types';
 
 interface CustomRequest extends Request {
   user?: IUser;

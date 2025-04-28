@@ -3,7 +3,7 @@ import {
   IRegisterFormData,
   ILoginFormData,
   IUpdatePasswordFormData,
-} from '@/types';
+} from '../../types';
 
 const registerSchema = z.object({
   name: z

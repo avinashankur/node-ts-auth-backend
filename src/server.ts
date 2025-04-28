@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 import app from './app';
-import connectDB from '@/config/database';
+import connectDB from './config/database';
 import logger from './utils/helpers/logger';
 
 dotenv.config();

@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import verifyJWT from '@/middlewares/auth.middleware';
+import verifyJWT from '../middlewares/auth.middleware';
 import {
   register,
   login,
@@ -10,8 +10,8 @@ import {
   updateUser,
   searchUser,
   getUserByUsername,
-} from '@/controllers/user.controller';
-import { refreshAccessToken } from '@/controllers/auth.controller';
+} from '../controllers/user.controller';
+import { refreshAccessToken } from '../controllers/auth.controller';
 
 const router = Router();
 

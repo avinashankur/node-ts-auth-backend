@@ -1,4 +1,4 @@
-import { getEnvVariable } from '@/utils/helpers/getEnvVariable';
+import { getEnvVariable } from '../utils/helpers/getEnvVariable';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 

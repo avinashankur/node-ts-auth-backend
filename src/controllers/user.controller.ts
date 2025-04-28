@@ -1,13 +1,13 @@
 import { CookieOptions, Request, Response } from 'express';
-import asyncHandler from '@/utils/helpers/AsyncHandler';
-import ApiError from '@/utils/helpers/ApiErrors';
-import ApiResponse from '@/utils/helpers/ApiResponse';
+import asyncHandler from '../utils/helpers/AsyncHandler';
+import ApiError from '../utils/helpers/ApiErrors';
+import ApiResponse from '../utils/helpers/ApiResponse';
 import {
   validateLogin,
   validateRegister,
   validateUpdatePassword,
-} from '@/utils/validators/user.validator';
-import User from '@/models/user.model';
+} from '../utils/validators/user.validator';
+import User from '../models/user.model';
 import { generateAccessAndRefreshToken } from './auth.controller';
 
 const cookieOptions: CookieOptions = {
