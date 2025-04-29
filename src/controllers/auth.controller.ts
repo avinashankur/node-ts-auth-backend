@@ -12,6 +12,7 @@ interface JwtPayloadWithId extends JwtPayload {
 const cookieOptions: CookieOptions = {
   httpOnly: true,
   secure: true,
+  sameSite: 'none',
 };
 
 const generateAccessAndRefreshToken = async (

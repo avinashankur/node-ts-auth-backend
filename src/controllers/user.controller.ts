@@ -13,6 +13,7 @@ import { generateAccessAndRefreshToken } from './auth.controller';
 const cookieOptions: CookieOptions = {
   httpOnly: true,
   secure: true,
+  sameSite: "none"
 };
 
 const register = asyncHandler(
