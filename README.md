@@ -281,3 +281,19 @@ curl -X POST http://localhost:5000/api/users \
 ---
 
 ### 🔥 Your Express + Mongoose + TypeScript App is Ready! 🚀
+
+---
+
+## 📚 Documentation
+
+Comprehensive API and module docs live under `docs/`:
+
+- API Endpoints: `docs/api/users.md`
+- Auth: `docs/auth.md`
+- Middleware: `docs/middleware.md`
+- Models: `docs/models/user.md`
+- Utilities: `docs/utils.md`
+- Types: `docs/types.md`
+- Configuration: `docs/configuration.md`
+
+Start at `docs/README.md`.
